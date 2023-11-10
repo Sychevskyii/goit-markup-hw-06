@@ -289,7 +289,8 @@ ol {
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover .modal-close-icon {
+ .modal-close:hover .modal-close-icon,
+ .modal-close:focus .modal-close-icon{
   fill: var(--accent-cl);
 }
 
