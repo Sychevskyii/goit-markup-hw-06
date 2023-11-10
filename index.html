@@ -75,7 +75,52 @@
                   <use href="./images/icons/sprite.svg#icon-close"></use>
                 </svg>
               </button>
-              <form action="" class="modal-form"></form>
+              <form action="" class="modal-form">
+                <b class="modal-form-text"
+                  >Залиште свої дані, ми вам передзвонимо</b
+                >
+                <label class="modal-form-group">
+                  <span class="modal-form-label">Ім'я</span>
+                  <input
+                    type="text"
+                    class="modal-form-input"
+                    name="user-name"
+                  />
+                  <svg class="modal-form-icon" width="18" height="18">
+                    <use href="./images/icons/sprite.svg#icon-user"></use>
+                  </svg>
+                </label>
+                <label class="modal-form-group">
+                  <span class="modal-form-label">Телефон</span>
+                  <input type="phone" class="modal-form-input" name="phone" />
+                  <svg class="modal-form-icon" width="18" height="18">
+                    <use href="./images/icons/sprite.svg#icon-phone"></use>
+                  </svg>
+                </label>
+                <label class="modal-form-group">
+                  <span class="modal-form-label">Пошта</span>
+                  <input type="mail" class="modal-form-input" name="mail" />
+                  <svg class="modal-form-icon" width="18" height="18">
+                    <use href="./images/icons/sprite.svg#icon-mail-fill"></use>
+                  </svg>
+                </label>
+                <label class="modal-form-group">
+                  <span class="modal-form-label">Коментар</span>
+                  <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                </label>
+                <label class="modal-form-group">
+                  <input type="checkbox" />
+                  <span class="custom-checkbox">
+                    <svg class="custom-checkbox-icon" width="11" height="8">
+                      <use href="./images/icons/sprite.svg#icon-done"></use>
+                    </svg>
+                  </span>
+                  <span class="modal-form-label"
+                    >Погоджуюся з розсилкою та приймаю
+                    <a class="conditions-link" href="#">Умови договору</a>
+                  </span>
+                </label>
+              </form>
             </div>
           </div>
         </div>
@@ -579,7 +624,7 @@
         </div>
         <form action="" class="form-mailing">
           <b class="form-mailing-text">Підпишіться на розсилку</b>
-          <label class="form-mailing-group" for="email">
+          <label class="form-mailing-group">
             <input
               type="email"
               name="email"
@@ -589,7 +634,7 @@
             <button type="submit" class="form-mailing-button">
               Підписатися
               <svg class="form-mailing-icon" width="24" height="24">
-                <use href=""></use>
+                <use href="./images/icons/sprite.svg#icon-send"></use>
               </svg>
             </button>
           </label>

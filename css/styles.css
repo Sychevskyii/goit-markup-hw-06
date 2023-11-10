@@ -259,7 +259,7 @@ ol {
 .modal-wrapper {
   position: absolute;
   width: 528px;
-  height: 581px;
+  padding: 40px;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -283,6 +283,16 @@ ol {
   background-color: transparent;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Форма модального вікна */
+
+.modal-form-text {
+  display: block;
+}
+
+.modal-form-group {
+  display: block;
 }
 
 /* Секція про нас */
@@ -500,8 +510,8 @@ ol {
   color: #fff;
 }
 
-.address {
-  margin-right: 70px;
+.address-container {
+  margin-right: 93px;
 }
 
 .footer-address {
@@ -567,13 +577,21 @@ ol {
   margin-bottom: 20px;
 }
 
+.form-mailing-group {
+  display: flex;
+  align-items: center;
+}
+
 .form-mailing-input {
   width: 358px;
-  padding: 16px 280px 15px 16px;
+  padding: 16px 20px 15px 16px;
   background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  outline-offset: -2px;
+  outline-offset: -1px;
   margin-right: 12px;
 }
 
@@ -581,12 +599,43 @@ ol {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 0.48px;
+}
+
+.form-mailing-input::content {
+  color: #fff;
 }
 
 .form-mailing-input:focus {
-  outline: 1px solid #fff;
+  outline: 1px solid #2196f3;
 }
+
+.form-mailing-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 28px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 0.96px;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+.form-mailing-button:hover,
+.form-mailing-button:focus {
+  background-color: #158bec;
+}
+
+.form-mailing-icon {
+  fill: #fff;
+  margin-left: 10px;
+}
+
 
 /* 
 Стилі портфоліо
