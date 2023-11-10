@@ -106,20 +106,21 @@
                 </label>
                 <label class="modal-form-group">
                   <span class="modal-form-label">Коментар</span>
-                  <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                  <textarea class="modal-form-comment" name="comment" id="" cols="30" rows="10" placeholder="Введіть текст"></textarea>
                 </label>
-                <label class="modal-form-group">
-                  <input type="checkbox" />
+                <label class="modal-form-group modal-form-group-conditions">
+                  <input class="checkbox" type="checkbox" hidden/>
                   <span class="custom-checkbox">
                     <svg class="custom-checkbox-icon" width="11" height="8">
                       <use href="./images/icons/sprite.svg#icon-done"></use>
                     </svg>
                   </span>
-                  <span class="modal-form-label"
+                  <span class="modal-form-label modal-form-label-text"
                     >Погоджуюся з розсилкою та приймаю
                     <a class="conditions-link" href="#">Умови договору</a>
                   </span>
                 </label>
+                <button type="submit" class="modal-form-button btn">Відправити</button>
               </form>
             </div>
           </div>
@@ -631,7 +632,7 @@
               class="form-mailing-input"
               placeholder="E-mail"
             />
-            <button type="submit" class="form-mailing-button">
+            <button type="submit" class="form-mailing-button btn">
               Підписатися
               <svg class="form-mailing-icon" width="24" height="24">
                 <use href="./images/icons/sprite.svg#icon-send"></use>
